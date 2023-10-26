@@ -1,6 +1,15 @@
 public class Rettangolo implements Forme{
     public float sideA;
     public float sideB;
+    private final NumeroAngoli angoli;
+
+    public Rettangolo(NumeroAngoli angoli) {
+        this.angoli = angoli;
+    }
+
+    public NumeroAngoli getAngoli() {
+        return angoli;
+    }
 
     public void setSideA(float sideA) {
         this.sideA = sideA;
